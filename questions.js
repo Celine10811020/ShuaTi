@@ -1,6 +1,6 @@
 var QuestionsAnswers = [];
 
-//第219題 有問題 (?)
+//第219、689、700題 有問題 (?)
 function QuestionsAnswers_initialization(){
     //i<QuestionsCount*2
     for(var i=0; i<4800; i++){
