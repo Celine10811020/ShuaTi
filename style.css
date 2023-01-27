@@ -1,10 +1,28 @@
-body
-{
+html{
   margin: 5vw;
   font-size: 20px;
 }
 
-p
-{
+p.QA{
   font-size: 20px;
+  width: 75vw;
+  float: left;
+}
+
+input{
+  margin-top: 20px;
+  width: 10vw;
+  float: right;
+}
+
+button.question{
+  position: fixed;
+  bottom: 3vw;
+  left: 5vw;
+}
+
+button.answer{
+  position: fixed;
+  bottom: 5vw;
+  right: 5vw;
 }
