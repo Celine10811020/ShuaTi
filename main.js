@@ -16,8 +16,11 @@ function setup(){
 
   /* Initiallize document.body elements */
   createP('刷刷題');
-  createP('本程式隨機輸題。按「繼續」輸出題目，再按「繼續」看解答。看完答案後，按「繼續」進入下一題。');
-  ButtonContinue = createButton('繼續');
-  ButtonContinue.mousePressed(button1_Clicked);
+  createP('本程式隨機輸題。按「題目」輸出40題問題，再按「答案」看解答。看完解答後，按「題目」再次隨機出題。');
+  ButtonQuestion = createButton('題目');
+  ButtonQuestion.mousePressed(button1_Clicked);
   LabelQA = createP('');
+  ButtonAnswer = createButton('答案');
+  ButtonAnswer.mousePressed(button2_Clicked);
+  ButtonAnswer.hide();
 }
