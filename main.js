@@ -62,6 +62,10 @@ function button1_Clicked(){
       LabelQA = createP(i+1 + ". " + QuestionsAnswers[QuestionNumber][0] + '<br><br>', true);
       LabelQA.addClass('QA');
       AnswerInput[i] = createInput();
+      if(i == 0)
+      {
+        LabelQA = loadImage(QuestionsAnswers[0][2]);
+      }
       console.log(i+1 + ", 題庫題號:" + QuestionNumber + ", 答案:" + QuestionsAnswers[QuestionNumber][1]);
       QuestionIndex[i] = QuestionNumber;
     }
