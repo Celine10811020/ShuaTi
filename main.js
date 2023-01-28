@@ -2,12 +2,13 @@
 var QuestionsCount; // 資料庫題數
 var ButtonQuestion; // 「題目」按鈕 (Button)
 var ButtonAnswer; // 「答案」按鈕 (Button)
-var LabelQA; // 展示題目和答案 (p)
+var LabelQ = new Array(40); // 展示題目
+var LabelA; // 展示答案
 var AnswerInput = new Array(40); // 輸入答案的文字框
 var QAStatus = 1; // LabelQA顯示狀態. 0: 正在展示問題. 1: 正在展示答案 (int)
 var QuestionNumber; // 目前的題號 (int)
 var QuestionIndex = [];
-var image;
+var Image;
 
 function setup(){
 
@@ -27,8 +28,11 @@ function setup(){
   ButtonAnswer.addClass('answer');
   ButtonAnswer.mousePressed(button2_Clicked);
   ButtonAnswer.hide();
+  LabelA = createP();
+  LabelA.hide();
 }
 
+//任何時候
 function draw(){
   if(!QAStatus)
   {
@@ -39,6 +43,7 @@ function draw(){
     ButtonAnswer.hide();
   }
 
+  //螢幕畫面滑到底
   if(QAStatus)
   {
     var scrollTop = $(window).scrollTop();
@@ -55,19 +60,21 @@ function draw(){
   }
 }
 
+//題目
 function button1_Clicked(){
   if(QAStatus){
+    LabelA.hide();
     for(var i=0; i<40; i++){
       QuestionNumber = Math.floor(Math.random() * QuestionsCount);
       //題目文字敘述
-      LabelQA = createP(i+1 + ". " + QuestionsAnswers[QuestionNumber][0] + '<br><br>', true);
-      LabelQA.addClass('QA');
+      LabelQ[i] = createP(i+1 + ". " + QuestionsAnswers[QuestionNumber][0] + '<br><br>', true);
+      LabelQ[i].addClass('QA');
       AnswerInput[i] = createInput();
-      if(i == 0)
+      /*if(i == 0) //加入圖片
       {
-        image = createImg(QuestionsAnswers[0][2]);
-        image.addClass('img');
-      }
+        Image = createImg(QuestionsAnswers[0][2]);
+        Image.addClass('img');
+      }*/
       console.log(i+1 + ", 題庫題號:" + QuestionNumber + ", 答案:" + QuestionsAnswers[QuestionNumber][1]);
       QuestionIndex[i] = QuestionNumber;
     }
@@ -75,17 +82,24 @@ function button1_Clicked(){
   }
 }
 
+//答案
 function button2_Clicked(){
   if(!QAStatus){
-    LabelQA.html("<br>答錯題目與正確答案: <br>", true);
+    LabelA.show();
+    for(var i=0; i<40; i++)
+    {
+      LabelQ[i].remove();
+      AnswerInput[i].remove();
+    }
+    LabelA.html("<br>答錯題目與正確答案: <br>");
     for(var i=0; i<40; i++){
       QuestionNumber = QuestionIndex[i];
       console.log(i+1 + ", 題庫題號:" + QuestionNumber + ", 輸入答案:" + AnswerInput[i].value());
       //答案文字敘述
       if(AnswerInput[i].value() != QuestionsAnswers[QuestionNumber][1])
       {
-        LabelQA.html(i+1 + ". " + QuestionsAnswers[QuestionNumber][0] + '<br>', true);
-        LabelQA.html("Your Answer: " + AnswerInput[i].value() + "<br> Correct Answer: " + QuestionsAnswers[QuestionNumber][1] + '<br><br>', true);
+        LabelA.html(i+1 + ". " + QuestionsAnswers[QuestionNumber][0] + '<br>', true);
+        LabelA.html("Your Answer: " + AnswerInput[i].value() + "<br> Correct Answer: " + QuestionsAnswers[QuestionNumber][1] + '<br><br>', true);
       }
     }
     QAStatus = 1;
