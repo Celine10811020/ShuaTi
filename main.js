@@ -7,6 +7,7 @@ var AnswerInput = new Array(40); // 輸入答案的文字框
 var QAStatus = 1; // LabelQA顯示狀態. 0: 正在展示問題. 1: 正在展示答案 (int)
 var QuestionNumber; // 目前的題號 (int)
 var QuestionIndex = [];
+var image;
 
 function setup(){
 
@@ -64,7 +65,8 @@ function button1_Clicked(){
       AnswerInput[i] = createInput();
       if(i == 0)
       {
-        LabelQA = loadImage(QuestionsAnswers[0][2]);
+        image = createImg(QuestionsAnswers[0][2]);
+        image.addClass('img');
       }
       console.log(i+1 + ", 題庫題號:" + QuestionNumber + ", 答案:" + QuestionsAnswers[QuestionNumber][1]);
       QuestionIndex[i] = QuestionNumber;

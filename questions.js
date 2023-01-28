@@ -9,7 +9,7 @@ function QuestionsAnswers_initialization(){
 
     QuestionsAnswers[0][0] = "勞動基準法計算職業災害補償引用「平均工資」一詞，係指災害發生之前多久期間內所得工資總額除以該期間之總日數所得之金額？（單選）<br>&emsp;1. 1個月<br>&emsp;2. 工作場所3個月<br>&emsp;3. 6個月<br>&emsp;4. 1年。";
     QuestionsAnswers[0][1] = "3";
-    QuestionsAnswers[0][2] = "image/image.jpg"
+    QuestionsAnswers[0][2] = "./image/image.jpg"
     QuestionsAnswers[1][0] = "依勞動基準法規定，勞工每幾日中至少應有一日休息作為例假？（單選）<br>&emsp;1. 5<br>&emsp;2. 行政院國家永續發展委員會6<br>&emsp;3. 7<br>&emsp;4. 14。";
     QuestionsAnswers[1][1] = "3";
     QuestionsAnswers[2][0] = "依勞動基準法規定，勞工遭受職業災害後，雇主之職業災害補償原則為下列何者？（單選）<br>&emsp;1.不論雇主有無過失責任，均應予以補償<br>&emsp;2.30萬元以上300萬以下視雇主有無過失決定補償與否<br>&emsp;3.視勞工有無過失決定補償與否<br>&emsp;4.視勞工是否提出要求決定補償與否。";
