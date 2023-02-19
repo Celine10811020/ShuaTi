@@ -7,26 +7,25 @@ function QuestionsAnswers_initialization(){
         QuestionsAnswers[i] = [];
     }
 
-    QuestionsAnswers[0][0] = "勞動基準法計算職業災害補償引用「平均工資」一詞，係指災害發生之前多久期間內所得工資總額除以該期間之總日數所得之金額？（單選）<br>&emsp;1. 1個月<br>&emsp;2. 工作場所3個月<br>&emsp;3. 6個月<br>&emsp;4. 1年。";
+    QuestionsAnswers[0][0] = "./image/1.png";
     QuestionsAnswers[0][1] = "3";
-    QuestionsAnswers[0][2] = "./image/image.jpg"
-    QuestionsAnswers[1][0] = "依勞動基準法規定，勞工每幾日中至少應有一日休息作為例假？（單選）<br>&emsp;1. 5<br>&emsp;2. 行政院國家永續發展委員會6<br>&emsp;3. 7<br>&emsp;4. 14。";
+    QuestionsAnswers[1][0] = "./image/2.png";
     QuestionsAnswers[1][1] = "3";
-    QuestionsAnswers[2][0] = "依勞動基準法規定，勞工遭受職業災害後，雇主之職業災害補償原則為下列何者？（單選）<br>&emsp;1.不論雇主有無過失責任，均應予以補償<br>&emsp;2.30萬元以上300萬以下視雇主有無過失決定補償與否<br>&emsp;3.視勞工有無過失決定補償與否<br>&emsp;4.視勞工是否提出要求決定補償與否。";
+    QuestionsAnswers[2][0] = "./image/3.png";
     QuestionsAnswers[2][1] = "1";
-    QuestionsAnswers[3][0] = "依勞動基準法規定，勞工因職業災害死亡，雇主除給與5個月平均工資喪葬費外，並應一次給予其遺屬多少個月平均工資之死亡補償？（單選）<br>&emsp;1.30<br>&emsp;2.起重機40<br>&emsp;3.50<br>&emsp;4.60。";
+    QuestionsAnswers[3][0] = "./image/4.png";
     QuestionsAnswers[3][1] = "2";
-    QuestionsAnswers[4][0] = "依勞動基準法規定，勞工遭遇職業災害死亡，其死亡補償受領之遺屬第一順位為下列何者？（單選）<br>&emsp;1.父母<br>&emsp;2.工作場所建築物應依建築法規及職業安全衛生法規之相關規定設計配偶及子女<br>&emsp;3.祖父母<br>&emsp;4.兄弟姊妹。";
+    QuestionsAnswers[4][0] = "./image/5.png";
     QuestionsAnswers[4][1] = "2";
-    QuestionsAnswers[5][0] = "依勞動基準法施行細則規定，勞工因職業災害死亡，雇主應於幾日內給予其遺屬喪葬費？（單選）<br>&emsp;1.3<br>&emsp;2.55<br>&emsp;3.10<br>&emsp;4.15日。";
+    QuestionsAnswers[5][0] = "./image/6.png";
     QuestionsAnswers[5][1] = "1";
-    QuestionsAnswers[6][0] = "依勞工請假規則規定，下列何者有誤？（單選）<br>&emsp;1.婚假8日工資照給<br>&emsp;2.定期健康檢查養父母喪亡喪假6日工資照給<br>&emsp;3.普通傷病假未住院者1年內合計不超過30日<br>&emsp;4.事假不給工資，1年內合計不超過14日。";
+    QuestionsAnswers[6][0] = "./image/7.png";
     QuestionsAnswers[6][1] = "2";
-    QuestionsAnswers[7][0] = "依職工福利金條例規定，有關職工福利金之提撥，每月於每個職員工薪資內各扣百分之多少？（單選）<br>&emsp;1.0.1<br>&emsp;2.處新台幣3萬元以上6萬元以下罰鍰0.2<br>&emsp;3.0.5<br>&emsp;4.1.0。";
+    QuestionsAnswers[7][0] = "./image/8.png";
     QuestionsAnswers[7][1] = "3";
-    QuestionsAnswers[8][0] = "依職工福利金條例施行細則規定，工廠或企業組織應將書表送職工福利委員會備查，下列何者有誤？（單選）<br>&emsp;1.每月職員薪津計算表<br>&emsp;2.3每月職工離職統計表<br>&emsp;3.每月營業收入及其他收入之報告表<br>&emsp;4.向董事會提出之業務報告書。";
+    QuestionsAnswers[8][0] = "./image/9.png";
     QuestionsAnswers[8][1] = "2";
-    QuestionsAnswers[9][0] = "依勞工保險條例規定，普通事故保險之分類及其給付種類，不包括下列何者？（單選）<br>&emsp;1.生育<br>&emsp;2.原事業單位傷病<br>&emsp;3.失能<br>&emsp;4.醫療。";
+    QuestionsAnswers[9][0] = "./image/10.png";
     QuestionsAnswers[9][1] = "4";
     QuestionsAnswers[10][0] = "依勞工保險條例施行細則規定，下列敘述何者有誤？（單選）<br>&emsp;1.被保險人因遭遇傷害在請假期間者，不得退保<br>&emsp;2.人員薪資被保險人離職時，投保單位應於離職第2天填具退保申報表送交保險人<br>&emsp;3.保險人應至少每3年精算1次普通事故保險費率<br>&emsp;4.同時具備參加勞工保險及公教人員保險條件者，僅得擇一參加之。";
     QuestionsAnswers[10][1] = "2";
