@@ -3,7 +3,9 @@ html{
   font-size: 20px;
 }
 
-p.QA{
+p.pA{
+  margin-top: 0px;
+  margin-bottom: 20px;
   font-size: 20px;
   width: 75vw;
   float: left;
@@ -23,11 +25,15 @@ button.question{
 
 button.answer{
   position: fixed;
-  bottom: 5vw;
+  bottom: 3vw;
   right: 5vw;
 }
 
 .img{
-  height: 20vw;
-  width: 20vw;
+  width: 85vw;
+}
+
+.input{
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
