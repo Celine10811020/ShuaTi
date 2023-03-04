@@ -1903,9 +1903,9 @@ QuestionsAnswers[943][0] = "./image/944.png";
 QuestionsAnswers[944][0] = "./image/945.png";
 QuestionsAnswers[945][0] = "./image/946.png";
 QuestionsAnswers[946][0] = "./image/947.png";
-
+QuestionsAnswers[947][0] = "./image/948.png";
 
 
     //總共有幾題，注意：0-index
-    QuestionsCount = 100;
+    QuestionsCount = 948;
 }
